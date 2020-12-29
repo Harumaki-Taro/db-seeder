@@ -1,6 +1,7 @@
 {
   "name": "munablamu/db-seeder",
   "description": "Simple to use PHP db seeding tool that uses faker generators, forked from tebazil/db-seeder",
+  "minimum-stability": "stable",
   "authors": [
     {
       "name": "munablamu",
