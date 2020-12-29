@@ -22,7 +22,7 @@ class DbHelper
         $this->pdo = $pdo;
     }
 
-    public function insert($table, $columns, $ignore)
+    public function insert($table, $columns, $ignore=false)
     {
         $columnString = implode(', ',array_keys($columns));
         $placeholderValues = [];
