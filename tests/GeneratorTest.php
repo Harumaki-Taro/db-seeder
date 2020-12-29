@@ -20,7 +20,7 @@ class GeneratorTest extends PHPUnit_Framework_TestCase
     public function getGenerator()
     {
         if(is_null($this->generator)) {
-            $this->generator = new Generator(new \tebazil\dbseeder\Seeder(new Pdo('mysql:localhost','root','test'))); //yeah, I know we can benefit from some decoupling here
+            $this->generator = new Generator(new \munablamu\dbseeder\Seeder(new Pdo('mysql:localhost','root','test'))); //yeah, I know we can benefit from some decoupling here
         }
         return $this->generator;
     }

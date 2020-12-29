@@ -6,7 +6,7 @@
  * Time: 21:14
  */
 
-namespace tebazil\dbseeder;
+namespace munablamu\dbseeder;
 
 use PDO;
 

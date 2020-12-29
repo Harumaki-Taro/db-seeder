@@ -6,7 +6,7 @@
  * Time: 19:46
  */
 
-namespace tebazil\dbseeder;
+namespace munablamu\dbseeder;
 
 /**
  * Class GeneratorConfigurator

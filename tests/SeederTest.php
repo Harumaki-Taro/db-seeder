@@ -14,7 +14,7 @@ class SeederTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->seeder = new \tebazil\dbseeder\Seeder($this->getPdo());
+        $this->seeder = new \munablamu\dbseeder\Seeder($this->getPdo());
     }
 
     public function testConstructor()

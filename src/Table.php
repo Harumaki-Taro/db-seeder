@@ -1,5 +1,5 @@
 <?php
-namespace tebazil\dbseeder;
+namespace munablamu\dbseeder;
 
 use Helper;
 

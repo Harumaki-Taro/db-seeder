@@ -6,7 +6,7 @@
  * Time: 10:32
  */
 
-namespace tebazil\dbseeder;
+namespace munablamu\dbseeder;
 
 /**
  * Class FakerWrapper

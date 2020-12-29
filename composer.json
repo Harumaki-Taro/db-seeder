@@ -1,16 +1,16 @@
 {
-  "name": "harumaki-taro/db-seeder",
+  "name": "munablamu/db-seeder",
   "description": "Simple to use PHP db seeding tool that uses faker generators, forked from tebazil/db-seeder",
   "authors": [
     {
-      "name": "Harumaki Taro",
+      "name": "munablamu",
       "email": "coffee.git@gmail.com"
     }
   ],
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/Harumaki-Taro/db-seeder/issues?state=open",
-    "source": "https://github.com/Harumaki-Taro/db-seeder"
+    "issues": "https://github.com/munablamu/db-seeder/issues?state=open",
+    "source": "https://github.com/munablamu/db-seeder"
   },
 
   "require": {
@@ -22,7 +22,7 @@
 
   "autoload": {
     "psr-4": {
-      "tebazil\\dbseeder\\": "src"
+      "munablamu\\dbseeder\\": "src"
     }
   }
 

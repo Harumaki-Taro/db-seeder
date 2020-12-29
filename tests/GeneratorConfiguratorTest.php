@@ -11,7 +11,7 @@ class GeneratorConfiguratorTest extends PHPUnit_Framework_TestCase
     private $configurator;
     public function __construct($name = null, array $data = array(), $dataName = '')
     {
-        $this->configurator = new \tebazil\dbseeder\GeneratorConfigurator();
+        $this->configurator = new \munablamu\dbseeder\GeneratorConfigurator();
         parent::__construct($name, $data, $dataName);
     }
 

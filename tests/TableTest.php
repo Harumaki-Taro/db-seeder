@@ -60,7 +60,7 @@ class TableTest extends PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->table = new \tebazil\dbseeder\Table(self::TABLE_NAME, new Generator(), new \tebazil\dbseeder\DbHelper(new PDO('sqlite::memory:')));
+        $this->table = new \munablamu\dbseeder\Table(self::TABLE_NAME, new Generator(), new \munablamu\dbseeder\DbHelper(new PDO('sqlite::memory:')));
 
     }
 

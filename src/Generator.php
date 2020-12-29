@@ -6,7 +6,7 @@
  * Time: 22:27
  */
 
-namespace tebazil\dbseeder;
+namespace munablamu\dbseeder;
 
 
 class Generator

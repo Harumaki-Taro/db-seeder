@@ -6,7 +6,7 @@
  * Date: 10.09.15
  * Time: 0:09
  */
-use \tebazil\dbseeder\Generator;
+use \munablamu\dbseeder\Generator;
 class FakerConfiguratorTest extends PHPUnit_Framework_TestCase
 {
     /**
@@ -19,7 +19,7 @@ class FakerConfiguratorTest extends PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->faker = new \tebazil\dbseeder\FakerConfigurator();
+        $this->faker = new \munablamu\dbseeder\FakerConfigurator();
     }
 
 

@@ -6,7 +6,7 @@
  * Time: 18:10
  */
 
-namespace tebazil\dbseeder;
+namespace munablamu\dbseeder;
 
 
 class TableConfigurator

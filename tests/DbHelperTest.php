@@ -39,7 +39,7 @@ class DbHelperTest extends PHPUnit_Framework_TestCase
 
     private function getDbHelper() {
         if(is_null($this->dbHelper)) {
-            $this->dbHelper = new \tebazil\dbseeder\DbHelper($this->getPdo());
+            $this->dbHelper = new \munablamu\dbseeder\DbHelper($this->getPdo());
         }
         return $this->dbHelper;
     }

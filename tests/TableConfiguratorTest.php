@@ -19,7 +19,7 @@ class TableConfiguratorTest extends PHPUnit_Framework_TestCase
 
     public function __construct($name = null, array $data = array(), $dataName = '')
     {
-        $this->configurator = new \tebazil\dbseeder\TableConfigurator(new \tebazil\dbseeder\Table(self::TABLE_NAME, new \tebazil\dbseeder\Generator(), new \tebazil\dbseeder\DbHelper(new Pdo('sqlite::memory:'))));
+        $this->configurator = new \munablamu\dbseeder\TableConfigurator(new \munablamu\dbseeder\Table(self::TABLE_NAME, new \munablamu\dbseeder\Generator(), new \munablamu\dbseeder\DbHelper(new Pdo('sqlite::memory:'))));
         parent::__construct($name, $data, $dataName);
     }
 
