@@ -17,6 +17,7 @@ class Table {
     private $selfDependentColumns=[];
     private $columnConfig=[];
     private $rowQuantity;
+    private $duplicate=false;
 
     public function __construct($name, Generator $generator, $dbHelper) {
         $this->name = $name;
@@ -193,7 +194,7 @@ class Table {
     private function insertData()
     {
         foreach($this->rows as $row) {
-            $this->dbHelper->insert($this->name, $row);
+            $this->dbHelper->insert($this->name, $row, $this->duplicate);
         }
     }
 
@@ -221,9 +222,12 @@ class Table {
         return $this->dependsOn;
     }
 
-
-
-
-
-
+    /**
+     * @param  bool
+     * @return void
+     */
+    public function setDuplicate($duplicate)
+    {
+      $this->duplicate = $duplicate;
+    }
 }
