@@ -22,7 +22,7 @@ class DbHelper
         $this->pdo = $pdo;
     }
 
-    public function insert($table, $columns)
+    public function insert($table, $columns, $ignore)
     {
         $columnString = implode(', ',array_keys($columns));
         $placeholderValues = [];
@@ -31,7 +31,11 @@ class DbHelper
 
         }
         $placeholderString = implode(', ',array_keys($placeholderValues));
-        $sql = 'INSERT INTO '.$table.'('.$columnString.') VALUES ('.$placeholderString.')';
+        if ( $ignore ) {
+          $sql = 'INSERT IGNORE INTO '.$table.'('.$columnString.') VALUES ('.$placeholderString.')';
+        } else {
+          $sql = 'INSERT INTO '.$table.'('.$columnString.') VALUES ('.$placeholderString.')';
+        }
         echo '>>> Executing "'.$sql.'" with params: '.$this->getParamsForEcho($placeholderValues).PHP_EOL;
         $stmt = $this->pdo->prepare($sql);
         if(!$stmt instanceof \PDOStatement) {
