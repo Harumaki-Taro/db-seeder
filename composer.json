@@ -1,16 +1,16 @@
 {
-  "name": "tebazil/db-seeder",
-  "description": "Simple to use PHP db seeding tool that uses faker generators",
+  "name": "harumaki-taro/db-seeder",
+  "description": "Simple to use PHP db seeding tool that uses faker generators, forked from tebazil/db-seeder",
   "authors": [
     {
-      "name": "Vasiliy Baukin",
-      "email": "vasiliy.baukin@gmail.com"
+      "name": "Harumaki Taro",
+      "email": "coffee.git@gmail.com"
     }
   ],
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/tebazil/db-seeder/issues?state=open",
-    "source": "https://github.com/tebazil/db-seeder"
+    "issues": "https://github.com/Harumaki-Taro/db-seeder/issues?state=open",
+    "source": "https://github.com/Harumaki-Taro/db-seeder"
   },
 
   "require": {
