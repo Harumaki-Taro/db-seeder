@@ -34,6 +34,10 @@ class Seeder
         return new TableConfigurator($this->tables[$name]);
     }
 
+    public function allowDuplicate($table, $duplicate) {
+        $this->tables[$table]->setDuplicate($duplicate);
+    }
+
     public function refill()
     {
         $this->checkCrossDependentTables();
